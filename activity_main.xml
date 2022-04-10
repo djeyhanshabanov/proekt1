@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/zaglavie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Моля въведете данните на автомобила си:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zaglavie"
+        android:hint="Марка"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/marka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/model"
+        android:hint="Модел"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/regnomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marka"
+        android:hint="Регистрационен номер"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+
+    <EditText
+        android:id="@+id/danak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Изтичане на данъка"
+        android:textSize="24dp"
+        android:layout_below="@+id/regnomer"
+        android:inputType="date"
+        />
+
+    <EditText
+        android:id="@+id/zastrahovka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Изтичане на застраховката"
+        android:textSize="24dp"
+        android:layout_below="@+id/danak"
+        android:inputType="date"
+        />
+
+    <EditText
+        android:id="@+id/pregled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Изтичане на прегледа"
+        android:textSize="24dp"
+        android:layout_below="@+id/zastrahovka"
+        android:inputType="date"
+        />
+
+    <EditText
+        android:id="@+id/vinetka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Изтичане на винетката"
+        android:textSize="24dp"
+        android:layout_below="@+id/pregled"
+        android:inputType="date"
+        />
+
+    <Button
+        android:id="@+id/btnVmakni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vinetka"
+        android:layout_marginTop="30dp"
+        android:text="Вмъкни нови данни"
+        android:textSize="24dp"></Button>
+
+    <Button
+        android:id="@+id/btnObnovi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnVmakni"
+        android:layout_marginTop="5dp"
+        android:text="Обнови данните"
+        android:textSize="24dp"></Button>
+
+    <Button
+        android:id="@+id/btnIztriy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Изтрий данните"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btnObnovi">
+    </Button>
+
+    <Button
+        android:id="@+id/btnPogledni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Погледни данните"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btnIztriy">
+    </Button>
+
+</RelativeLayout>
